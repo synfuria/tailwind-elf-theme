@@ -1,0 +1,26 @@
+@use "theme" as *;
+
+$theme-name: "woodland";
+
+// Override colors for woodland theme
+$colors: (
+  primary: (
+    DEFAULT: #2d5a27,  // Deep forest green
+    light: #4b7a44,
+    dark: #1e3d1a
+  ),
+  accent: (
+    DEFAULT: #8b6d4b,  // Rich earth brown
+    light: #a68d6d,
+    dark: #634d35
+  ),
+  magic: (
+    DEFAULT: #7c618d,  // Forest magic purple
+    light: #9a82a9,
+    dark: #5e4a6b
+  )
+);
+
+:root {
+  @include generate-theme-colors;
+}

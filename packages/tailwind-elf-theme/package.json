@@ -1,0 +1,44 @@
+{
+  "name": "@synfuria/tailwind-elf-theme",
+  "version": "1.0.0",
+  "description": "🧝‍♀️ Mystical elven themes for TailwindCSS, forged in the ancient realms",
+  "author": "Synfuria <synfuria@synfuria.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true,
+    "registry": "https://registry.npmjs.org"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "build": "sass -I node_modules --no-source-map src:./"
+  },
+  "files": [
+    "woodland.css",
+    "moonlight.css",
+    "sunforge.css"
+  ],
+  "bugs": {
+    "url": "https://github.com/synfuria/tailwind-elf-theme/issues"
+  },
+  "homepage": "https://github.com/synfuria/tailwind-elf-theme#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/synfuria/tailwind-elf-theme.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "theme",
+    "elven",
+    "fantasy",
+    "mystical",
+    "nature",
+    "woodland",
+    "moonlight"
+  ],
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

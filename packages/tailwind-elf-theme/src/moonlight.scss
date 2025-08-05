@@ -1,0 +1,26 @@
+@use "theme" as *;
+
+$theme-name: "moonlight";
+
+// Override colors for moonlight theme
+$colors: (
+  primary: (
+    DEFAULT: #718096,  // Silvery blue
+    light: #a0aec0,
+    dark: #4a5568
+  ),
+  accent: (
+    DEFAULT: #b794f4,  // Moonlit purple
+    light: #d6bcfa,
+    dark: #805ad5
+  ),
+  magic: (
+    DEFAULT: #60a5fa,  // Ethereal blue
+    light: #93c5fd,
+    dark: #3b82f6
+  )
+);
+
+:root {
+  @include generate-theme-colors;
+}

@@ -1,0 +1,34 @@
+// Base theme variables and mixins
+$theme-name: "base";
+
+// Core colors
+$colors: (
+  primary: (
+    DEFAULT: #7eb36a,  // Forest green
+    light: #a4c896,
+    dark: #5a8c47
+  ),
+  accent: (
+    DEFAULT: #c0a88c,  // Earthen brown
+    light: #d6c4ae,
+    dark: #9a866d
+  ),
+  magic: (
+    DEFAULT: #9b8bb4,  // Mystical purple
+    light: #b7abc8,
+    dark: #766989
+  )
+);
+
+// Mixins for consistent color application
+@mixin generate-theme-colors {
+  @each $color-name, $shades in $colors {
+    @each $shade-name, $value in $shades {
+      @if $shade-name == "DEFAULT" {
+        --#{$theme-name}-#{$color-name}: #{$value};
+      } @else {
+        --#{$theme-name}-#{$color-name}-#{$shade-name}: #{$value};
+      }
+    }
+  }
+}
